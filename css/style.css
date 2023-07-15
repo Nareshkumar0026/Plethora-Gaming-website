@@ -1,0 +1,334 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+    transition: 0.5s;
+    z-index: 1000;
+    
+ }
+ .user-nav a:hover {
+  background-color: lightblue;
+  color: black;
+  box-shadow: 0 0 10px red;
+  
+ }
+ .user-nav a{
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: antiquewhite;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+    
+
+    
+
+ .logo{
+    width: 100px;
+    cursor: auto;
+ }
+  
+
+   /*  banner of the website */
+
+  .banner{
+   position: relative;
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:black;
+  }
+  .banner .bg{
+   position: relative;
+   width: 100%;
+   height: 50lvh;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("C:/Users/NARESH KUMAR/Downloads/pexels-stas-knop-9100862 (1).jpg") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+  }
+  .banner .bg .content{
+   width: 94%;
+   height: 40%;
+  }
+  .banner .bg .content h3{
+   font-size: 4em;
+   color: antiquewhite;
+   letter-spacing: 1px;
+ }
+ .banner .bg .content p{
+   font-size: 1em;
+   color: antiquewhite;
+   letter-spacing: 1px;
+ }
+ .banner .bg .content a{
+   display: inline-block;
+   margin: 20px 0;
+   padding: 10px 20px;
+   border: 1px solid seagreen;
+   text-decoration: none;
+   font-weight: 700;
+   border-radius: 5px;
+   letter-spacing: 1px;
+   color: antiquewhite;
+ }
+ .banner .bg .content a:hover{
+   background-color:lightblue;
+   border: none;
+   color: black;
+   box-shadow: 0 0 10px red;
+}
+.banner .bg img{
+   width: 600px;
+}
+/* about of the website */
+footer{
+  background-color: #111;
+}
+.footercontainer{
+  width: 100%;
+  padding: 25px 30px 20px;
+}
+
+.footernav{
+  margin: 10px 0;
+}
+.footernav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  
+}
+.footernav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+  position: relative;
+  top: 30px;
+}
+.footernav ul li a:hover{
+  opacity: 1;
+  font-size: 1.5em;
+  color:seagreen;
+}
+.footerbottom p{
+  color: white;
+}
+.footerbottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerbottom span{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+.logonav{
+  width: 500px;
+  height: 100px;
+  margin: 2px;
+  border: 3px solid white;
+  border-radius: 6px;
+}
+   /* games list pop  */
+   .hes ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        background-color:white;
+        align-items: center;
+        margin: 10px;
+        }
+
+    .hes ul li a{
+        background-color: black;
+        color: azure;
+        font-size: 1.2em;
+        text-decoration: none;   
+        padding: 5px; 
+        border-radius: 5px;
+        box-shadow: 4px 4px seagreen;
+    }
+   .hes ul li h1{
+        font-size: 2em;
+        color:maroon;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+    }
+    .hes ul li a:hover{
+        background-color:green;
+        font-size: 0.8em;
+        padding: 5px;
+        box-shadow: 3px 3px red;
+    }
+
+
+    .container{
+    border: 1px solid antiquewhite;
+    background-color: white;
+   display: flex;
+    padding: 20px;
+    margin: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;}
+  
+.card{
+    border: 6px solid black;
+    border-radius: 5px;
+    margin: 5px 5px ;
+    padding: 2px;
+    text-align: center;
+    width: 200px;
+    height: 350px;
+    background-color: black ;
+    
+}
+.imagecd{
+    height: 215px;
+    width: 150px; 
+     }
+.card h3{
+    color:goldenrod;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 900;
+    font-style: italic;
+ }     
+.imagecd img{
+    height: 200px;
+    width: 185px;
+    border-radius: 5px;
+}
+.card a{
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 40px;
+    color: white;
+    text-transform: uppercase;
+    background-color: red;
+    font-weight: 900;
+}
+.card p{
+    color: beige;
+    height: 70px;
+    padding: 5px;
+}
+.card a:hover{
+    background-color: green;
+}
+ /* ######################## blog section ########################################### */
+
+ #blog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0, 0,0, 0.05);
+  background-color: lightgoldenrodyellow;
+  border: 2px solid black;
+}
+.blog-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blog-heading span{
+  color:red;
+  padding: 20px;
+  font-size: larger;
+}
+.blog-heading h3{
+  font-size: 2.4rem;
+  color: black;
+  font-weight: 600;
+}
+.blog-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.blog-box{
+  width: 230px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 20px;
+}
+.blog-img{
+  width: 100%;
+  height: auto;
+}
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-text{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-text span{
+  color: red;
+  font-size: 0.9rem;
+}
+.blog-text .blog-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+}
+.blog-text .blog-title:hover{
+  color: red;
+  transition: all ease 0.3s;
+}
+.blog-text p{
+  color: gray;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+.blog-text a{
+  color: black;
+  text-decoration: none;
+}
+.blog-text a:hover{
+  color: red;
+  transition: all ease 0.3s;
+}
+
+ 
+

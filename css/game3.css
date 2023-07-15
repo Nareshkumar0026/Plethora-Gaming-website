@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "radio canada",sans-serif;
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("C:/Users/NARESH KUMAR/Desktop/ticbg.jpg");
+    background-size: cover;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.header h1{
+    text-align: center;
+    font-style: italic;
+    font: sans-serif;
+    color: white;    
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 35px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    border: 5px solid black;
+    border-radius: 5px;
+    height: 75px;
+    width: 75px;
+    margin: 3px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color:lightskyblue;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:lightcyan;
+}
+.btn:disabled{
+    color: black;
+    cursor: no-drop;
+}
+.result{
+    text-align: center;
+}
+.reset{
+    text-align: center;
+}
+#reset{
+    border: 3px solid black;
+    cursor: pointer;
+    color: white;
+    background-color:green;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 17px;
+    margin: 35px;
+    transition: all 0.1s ease-in-out;
+
+}
+#reset:hover{
+    color: white;
+    background-color:red;
+}
+
+
+
