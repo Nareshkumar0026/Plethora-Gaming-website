@@ -1,69 +1,57 @@
 *{
    margin: 0;
-   padding: 0;
    box-sizing: border-box;
 }
 .nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: auto;
-    padding: 10px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   position: sticky;
+   top: 0;
     background-color:black;
     transition: 0.5s;
-    z-index: 1000;
-    
- }
- .user-nav a:hover {
-  background-color: lightblue;
-  color: black;
-  box-shadow: 0 0 10px red;
-  
- }
- .user-nav a{
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: antiquewhite;
- text-transform: uppercase;
- text-decoration: none;
+    padding: 1em;
+    border: 2px solid white;
 }
-    
-
-    
-
- .logo{
-    width: 100px;
-    cursor: auto;
+.nav ul {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.nav li{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+.user-nav a{
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+ .user-nav a:hover {
+  opacity: 0.6;
+  color: darkkhaki;
+  font-size: 1em;
+  border-radius: 5px;
+}
+.logo{
+  width: 100px;
+  cursor: auto;
  }
   
 
    /*  banner of the website */
 
   .banner{
-   position: relative;
    width: 100%;
-   padding: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   padding:1em;
    background-color:black;
   }
   .banner .bg{
-   position: relative;
-   width: 100%;
-   height: 50lvh;
    display: flex;
-   justify-content: flex-end;
-   align-items: center;
+   justify-content: center;
    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("images/bgimg32.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
-
-  }
+   }
   .banner .bg .content{
    width: 94%;
    height: 40%;
@@ -82,12 +70,12 @@
    display: inline-block;
    margin: 20px 0;
    padding: 10px 20px;
-   border: 1px solid seagreen;
    text-decoration: none;
    font-weight: 700;
    border-radius: 5px;
    letter-spacing: 1px;
    color: antiquewhite;
+   border: 2px solid darkred;
  }
  .banner .bg .content a:hover{
    background-color:lightblue;
@@ -99,58 +87,38 @@
    width: 600px;
 }
 /* about of the website */
-footer{
-  background-color: #111;
-}
+
 .footercontainer{
   width: 100%;
-  padding: 25px 30px 20px;
+  background-color: #111;
 }
-
 .footernav{
-  margin: 10px 0;
+  margin: 2px;
 }
 .footernav ul{
   display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  
+  justify-content: space-evenly;
 }
-.footernav ul li a{
+.footernav li{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footernav a{
   color: white;
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
-  opacity: 0.7;
-  transition: 0.5s;
-  position: relative;
-  top: 30px;
 }
-.footernav ul li a:hover{
+.footernav a:hover{
   opacity: 1;
   font-size: 1.5em;
   color:seagreen;
 }
-.footerbottom p{
-  color: white;
-}
-.footerbottom{
-  background-color: #000;
-  padding: 20px;
-  text-align: center;
-}
-.footerbottom span{
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0px 5px;
-}
 .logonav{
-  width: 500px;
+  width: 100%;
   height: 100px;
-  margin: 2px;
-  border: 3px solid white;
+  margin: 1px;
   border-radius: 6px;
 }
    /* games list pop  */
@@ -160,34 +128,30 @@ footer{
         justify-content: space-between;
         background-color:white;
         align-items: center;
-        margin: 10px;
-        }
+        margin: 10px 1px;
+     }
 
-    .hes ul li a{
+    .hes a{
         background-color: black;
         color: azure;
-        font-size: 1.2em;
+        font-size: 1em;
         text-decoration: none;   
         padding: 5px; 
         border-radius: 5px;
-        box-shadow: 4px 4px seagreen;
     }
-   .hes ul li h1{
+   .hes h1{
         font-size: 2em;
         color:maroon;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      
     }
     .hes ul li a:hover{
         background-color:green;
         font-size: 0.8em;
         padding: 5px;
-        box-shadow: 3px 3px red;
     }
 
 
     .container{
-    border: 1px solid antiquewhite;
     background-color: white;
    display: flex;
     padding: 20px;
@@ -330,5 +294,25 @@ footer{
   transition: all ease 0.3s;
 }
 
+/* ############ Media Queries Maximum Width 600 pixels ############# */
  
-
+@media (max-width:600px){
+.nav ul{
+  display: flex;
+  flex-direction: column;
+}
+.nav li{
+  margin-top: 0.7em;
+}
+.footernav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hes h1{
+  font-size: 1em;
+}
+.hes a{
+  font-size: 0.6em;
+}
+}

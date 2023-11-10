@@ -12,12 +12,25 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-   .hes {
-    font-size: 3em;
-    text-align: center;
-    background-color: transparent;
-    color: whitesmoke;
-     }
+    .nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav li{
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+    }
+    .nav a{
+        font-size: 4em;
+        text-decoration: none;
+        font-weight: 900;
+        color: white;
+        background-color: black;
+        padding: 0.1em;
+    }
+
+    
      .rtp{
         text-transform: capitalize;
         background-color: transparent;
@@ -25,6 +38,7 @@
         color: whitesmoke;
         margin: 2px;
         padding: 10px;
+        border: 2px solid greenyellow;
      }
  .container{
     border: 1px solid antiquewhite;
@@ -146,11 +160,22 @@
 .piccard a:hover{
     background-color:navy ;
 }
-
+@media (max-width:600px){
+ iframe{
+    width: 200px;
+ }
+}
     
 </style>
 <body>
-      <h1 class="hes">Games Section</h1>
+    <div class="nav">
+     <ul>
+       <li><a href="PLETHORA GAMING WEBSITE.html"><</a></li>
+        <li><h1>Games Section</h1></li>
+        <li></li>
+     </ul>
+    </div>
+    
       <h3 class="rtp">ready to play</h3>
  
     <div class="container">
